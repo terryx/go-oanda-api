@@ -22,27 +22,32 @@ type Instrument struct {
 	} `json:"instruments"`
 }
 
-type Chart struct{
+type Chart struct {
 	Instrument  string `json:"instrument"`
 	Granularity string `json:"granularity"`
-	Candles []struct {
+	Candles     []struct {
 		Complete bool   `json:"complete"`
 		Volume   int    `json:"volume"`
 		Time     string `json:"time"`
-		Mid      map[string]string `json:"mid"`
+		Mid      struct {
+			Open  float64 `json:"o"`
+			High  float64 `json:"h"`
+			Low   float64 `json:"l"`
+			Close float64 `json:"c"`
+		} `json:"mid"`
 	} `json:"candles"`
 }
 
 type CandlestickParam struct {
-	Name		string
-	Granularity	string
+	Name        string
+	Granularity string
 }
 
 func (a *Api) GetInstrumentCandles(param CandlestickParam) (chart *Chart, err error) {
 	req, _ := a.NewRequest("GET", fmt.Sprintf("v3/instruments/%s/candles", param.Name), nil)
 	if param.Granularity != "" {
 		v := url.Values{}
-		v.Add("granularity",  param.Granularity)
+		v.Add("granularity", param.Granularity)
 		req.URL.RawQuery = v.Encode()
 	}
 	err = a.MakeRequest(req, &chart)

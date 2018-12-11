@@ -11,9 +11,9 @@ import (
 )
 
 type Api struct {
-	ApiKey    string `json:"apiKey"`
-	AccountID string `json:"accountID"`
-	Endpoint  string `json:"endpoint"`
+	ApiKey    string
+	AccountID string
+	Endpoint  string
 }
 
 var Client http.Client
