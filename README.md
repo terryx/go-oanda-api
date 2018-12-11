@@ -1,6 +1,6 @@
 ## Getting Started
 ```
-go get github.com/terryx/go-oanda-api
+go get github.com/terryx/go-oanda-api/oanda
 ```
 
 ## Examples
