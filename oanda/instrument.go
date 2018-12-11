@@ -30,10 +30,10 @@ type Chart struct {
 		Volume   int    `json:"volume"`
 		Time     string `json:"time"`
 		Mid      struct {
-			Open  float64 `json:"o"`
-			High  float64 `json:"h"`
-			Low   float64 `json:"l"`
-			Close float64 `json:"c"`
+			Open  string `json:"o"`
+			High  string `json:"h"`
+			Low   string `json:"l"`
+			Close string `json:"c"`
 		} `json:"mid"`
 	} `json:"candles"`
 }
