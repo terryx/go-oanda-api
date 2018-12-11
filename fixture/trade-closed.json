@@ -1,0 +1,80 @@
+{
+    "orderCreateTransaction": {
+        "type": "MARKET_ORDER",
+        "instrument": "NAS100_USD",
+        "units": "1",
+        "timeInForce": "FOK",
+        "positionFill": "DEFAULT",
+        "takeProfitOnFill": {
+            "price": "8800.0",
+            "timeInForce": "GTC"
+        },
+        "stopLossOnFill": {
+            "price": "800.0",
+            "timeInForce": "GTC"
+        },
+        "reason": "CLIENT_ORDER",
+        "id": "17347",
+        "accountID": "101-003-8944441-001",
+        "userID": 12345,
+        "batchID": "17347",
+        "requestID": "24492527945272083",
+        "time": "2018-12-11T05:33:35.497251822Z"
+    },
+    "orderFillTransaction": {
+        "type": "ORDER_FILL",
+        "orderID": "17347",
+        "instrument": "NAS100_USD",
+        "units": "1",
+        "requestedUnits": "1",
+        "price": "6678.6",
+        "pl": "0.0000",
+        "financing": "0.0000",
+        "commission": "0.0000",
+        "accountBalance": "94804.0533",
+        "gainQuoteHomeConversionFactor": "1.37279",
+        "lossQuoteHomeConversionFactor": "1.37297",
+        "guaranteedExecutionFee": "0.0000",
+        "halfSpreadCost": "1.5102",
+        "fullVWAP": "6678.6",
+        "reason": "MARKET_ORDER",
+        "tradeOpened": {
+            "price": "6678.6",
+            "tradeID": "17348",
+            "units": "1",
+            "guaranteedExecutionFee": "0.0000",
+            "halfSpreadCost": "1.5102",
+            "initialMarginRequired": "458.3700"
+        },
+        "fullPrice": {
+            "closeoutBid": "6676.4",
+            "closeoutAsk": "6678.6",
+            "timestamp": "2018-12-11T05:33:34.663358437Z",
+            "bids": [
+                {
+                    "price": "6676.4",
+                    "liquidity": "5000"
+                }
+            ],
+            "asks": [
+                {
+                    "price": "6678.6",
+                    "liquidity": "5000"
+                }
+            ]
+        },
+        "id": "17348",
+        "accountID": "101-003-8944441-001",
+        "userID": 12345,
+        "batchID": "17347",
+        "requestID": "24492527945272083",
+        "time": "2018-12-11T05:33:35.497251822Z"
+    },
+    "relatedTransactionIDs": [
+        "17347",
+        "17348",
+        "17349",
+        "17350"
+    ],
+    "lastTransactionID": "17350"
+}

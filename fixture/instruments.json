@@ -1,0 +1,33 @@
+{
+    "instruments": [
+        {
+            "name": "AUD_HKD",
+            "type": "CURRENCY",
+            "displayName": "AUD/HKD",
+            "pipLocation": -4,
+            "displayPrecision": 5,
+            "tradeUnitsPrecision": 0,
+            "minimumTradeSize": "1",
+            "maximumTrailingStopDistance": "1.00000",
+            "minimumTrailingStopDistance": "0.00050",
+            "maximumPositionSize": "0",
+            "maximumOrderUnits": "100000000",
+            "marginRate": "0.05"
+        },
+        {
+            "name": "NAS100_USD",
+            "type": "CFD",
+            "displayName": "US Nas 100",
+            "pipLocation": 0,
+            "displayPrecision": 1,
+            "tradeUnitsPrecision": 0,
+            "minimumTradeSize": "1",
+            "maximumTrailingStopDistance": "10000.0",
+            "minimumTrailingStopDistance": "5.0",
+            "maximumPositionSize": "0",
+            "maximumOrderUnits": "2000",
+            "marginRate": "0.05"
+        }
+    ],
+    "lastTransactionID": "2"
+}
